@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cf:after {
   content: "";
   display: table;
@@ -27,20 +28,20 @@
 
 /* Each icon is created by inserting the corret character into the content of the :before pseudo element. Like a boss. */
 .icon-ghost:before {
-  content: "\e000"; }
+  content: ""; }
 
 .icon-feed:before {
-  content: "\e001"; }
+  content: ""; }
 
 .icon-twitter:before {
-  content: "\e002";
+  content: "";
   font-size: 1.1em; }
 
 .icon-google-plus:before {
-  content: "\e003"; }
+  content: ""; }
 
 .icon-facebook:before {
-  content: "\e004"; }
+  content: ""; }
 
 body {
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -60,7 +61,7 @@ body {
   top: 10px;
   width: 48px;
   height: 48px;
-  background-color: black;
+  background-color: #000;
   overflow: hidden;
   z-index: 99; }
   .logo-readium .logo {
@@ -78,7 +79,7 @@ body {
   height: 450px;
   position: relative;
   overflow: hidden;
-  background-color: black; }
+  background-color: #000; }
   .teaserimage .teaserimage-image {
     background-size: cover;
     background-position: center;
@@ -113,8 +114,8 @@ body {
     border-radius: 50%;
     z-index: 99;
     text-indent: -9999px;
-    border: 3px solid white;
-    background-color: white;
+    border: 3px solid #fff;
+    background-color: #fff;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
@@ -128,24 +129,24 @@ body {
     outline: 0;
     line-height: 50px;
     word-break: break-word;
-    color: #333333; }
+    color: #333; }
   .blog-header .blog-description {
     margin: 0 0 20px;
     padding: 0 32px;
     font-size: 18px;
     line-height: 1.5;
-    color: #666666;
+    color: #666;
     text-align: center;
     font-weight: 400; }
   .blog-header .custom-links {
     margin: 0 0 50px;
     text-align: center;
-    color: #cccccc; }
+    color: #ccc; }
     .blog-header .custom-links a {
       text-decoration: none;
-      color: #999999; }
+      color: #999; }
       .blog-header .custom-links a:hover {
-        color: #333333; }
+        color: #333; }
 
 .content {
   width: 100%;
@@ -216,10 +217,10 @@ body {
   padding: 48px 0 0;
   font-size: 12px; }
   .pagination a {
-    color: #999999;
+    color: #999;
     text-decoration: none; }
     .pagination a:hover {
-      color: #333333; }
+      color: #333; }
 
 .post-reading {
   position: absolute;
@@ -247,17 +248,17 @@ body {
   max-width: 640px;
   font-size: 12px;
   text-align: center;
-  color: #999999;
+  color: #999;
   line-height: 17.6px; }
   .site-footer a {
-    color: #666666;
+    color: #666;
     text-decoration: none; }
     .site-footer a:hover {
-      color: #333333; }
+      color: #333; }
 
 .post .article-image {
   position: absolute;
-  background-color: black;
+  background-color: #000;
   top: 0;
   left: 0;
   right: 0;
@@ -293,7 +294,7 @@ body {
     letter-spacing: -0.04em;
     font-size: 50px;
     line-height: 1.1;
-    color: white;
+    color: #fff;
     margin-bottom: 16px;
     text-shadow: 0px 1px 16px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5); }
   .post .article-image .author-image {
@@ -329,7 +330,7 @@ body {
     margin: 64px auto 0;
     color: rgba(255, 255, 255, 0.75); }
     .post .article-image .fa-angle-down:hover {
-      color: white; }
+      color: #fff; }
   .post .article-image .topofpage {
     text-decoration: underline; }
 .post .noarticleimage .post-meta {
@@ -369,7 +370,7 @@ body {
 .post .post-content {
   width: 100%;
   font-family: Linux Libertine;
-  color: #333333; }
+  color: #333; }
   .post .post-content h1, .post .post-content h2, .post .post-content h3 {
     font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
   .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 {
@@ -396,13 +397,15 @@ body {
     line-height: 30px;
     margin: 0;
     padding-bottom: 30px;
-    color: #333333;
+    color: #333;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto; }
   .post .post-content a {
-    color: #333333;
-    text-decoration: underline; }
+    color: #028DC4;
+    text-decoration: none; }
+    .post .post-content a:hover {
+      text-decoration: underline; }
   .post .post-content img {
     max-width: 100%;
     margin: 0 auto; }
@@ -419,10 +422,11 @@ body {
     z-index: 300;
     text-align: center; }
   .post .post-content code {
-    background-color: #333333;
-    color: white;
-    border-color: #333333;
+    background-color: #E7F3FA;
+    color: #919191;
+    border-color: #333;
     font-family: Inconsolata, monospace, sans-serif;
+    font-size: 15px;
     border-radius: 8px;
     padding: 2px 4px 4px;
     position: relative;
@@ -432,13 +436,13 @@ body {
     -moz-hyphens: none;
     hyphens: none; }
   .post .post-content pre > code {
-    background-color: #333333;
-    border-color: #333333;
+    background-color: #333;
+    border-color: #333;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 1.33rem 1.7689rem;
-    color: white;
+    color: #fff;
     line-height: 1.4;
     width: 100%;
     display: block;
@@ -461,8 +465,8 @@ body {
     display: block;
     width: 15%;
     margin: 30px auto;
-    border: 0px solid #dddddd;
-    border-top: 1px solid #dddddd; }
+    border: 0px solid #ddd;
+    border-top: 1px solid #ddd; }
   .post .post-content blockquote {
     margin: 0 0 30px;
     border: none; }
@@ -499,8 +503,8 @@ body {
     display: block;
     width: 15%;
     margin: 16px 0 16px 100px;
-    border: 0px solid #dddddd;
-    border-top: 1px solid #dddddd; }
+    border: 0px solid #ddd;
+    border-top: 1px solid #ddd; }
   .post .bottom-teaser .isLeft {
     float: left;
     width: 47%;
@@ -514,10 +518,10 @@ body {
     .post .bottom-teaser .isLeft .index-headline {
       padding-bottom: 32px; }
     .post .bottom-teaser .isLeft a {
-      color: black;
+      color: #000;
       text-decoration: none; }
       .post .bottom-teaser .isLeft a:hover {
-        color: #333333;
+        color: #333;
         text-decoration: underline; }
     .post .bottom-teaser .isLeft .author-image {
       display: block;
@@ -542,7 +546,7 @@ body {
       margin: 0;
       padding-left: 100px; }
       .post .bottom-teaser .isLeft p.published {
-        color: #999999; }
+        color: #999; }
   .post .bottom-teaser .isRight {
     float: right;
     width: 47%;
@@ -557,13 +561,13 @@ body {
     .post .bottom-teaser .isRight .site-footer {
       margin: 0;
       padding: 0;
-      color: #333333;
+      color: #333;
       text-align: left;
       font-size: 14px;
       line-height: 1.3;
-      color: #999999; }
+      color: #999; }
       .post .bottom-teaser .isRight .site-footer a {
-        color: #333333;
+        color: #333;
         text-decoration: none; }
         .post .bottom-teaser .isRight .site-footer a:hover {
           text-decoration: underline; }
@@ -571,19 +575,19 @@ body {
         display: block;
         padding-bottom: 18px;
         font-weight: 700;
-        color: #333333; }
+        color: #333; }
 
 .share {
   text-align: right;
   padding: 20px 0 0; }
   .share a {
     text-decoration: none;
-    color: #bbbbbb;
+    color: #bbb;
     padding-left: 12px; }
     .share a .hidden {
       display: none; }
     .share a:hover {
-      color: #333333; }
+      color: #333; }
 
 .bottom-closer {
   width: 100%;
@@ -617,14 +621,14 @@ body {
       outline: 0;
       line-height: 50px;
       word-break: break-word;
-      color: white;
+      color: #fff;
       text-shadow: 0px 1px 16px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5); }
     .bottom-closer .inner .blog-description {
       margin: 0 0 50px;
       padding: 0 32px;
       font-size: 18px;
       line-height: 1.5;
-      color: white;
+      color: #fff;
       text-align: center;
       font-weight: 400;
       text-shadow: 0px 1px 16px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5); }
@@ -641,13 +645,17 @@ body {
       cursor: pointer;
       height: 44px;
       background: #57ad68;
-      color: white;
+      color: #fff;
       vertical-align: middle;
       box-sizing: border-box;
       border-radius: 999em;
       line-height: 44px;
       padding: 0 18px; }
+
 #disqus_thread {
   margin-top: 50px; }
+
 .post-tag-articleimage {
   display: none; }
+
+/*# sourceMappingURL=main.css.map */
