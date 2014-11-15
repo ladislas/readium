@@ -191,7 +191,8 @@ body {
         color: #b3b3b1;
         text-decoration: none; }
         .content article .post-meta a:hover {
-          text-decoration: underline; }
+          border-bottom: 1px solid #cbeefa;
+          box-shadow: inset 0 -4px 0 #cbeefa; }
 
 .container.featured {
   padding-bottom: 40px; }
@@ -402,10 +403,10 @@ body {
     -moz-hyphens: auto;
     hyphens: auto; }
   .post .post-content a {
-    color: #028DC4;
+    border-bottom: 1px solid #cbeefa;
+    box-shadow: inset 0 -4px 0 #cbeefa;
+    color: inherit;
     text-decoration: none; }
-    .post .post-content a:hover {
-      text-decoration: underline; }
   .post .post-content img {
     max-width: 100%;
     margin: 0 auto; }
