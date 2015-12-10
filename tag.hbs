@@ -5,12 +5,10 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-{{! The big featured header on the homepage, with the site logo and description }}
-
-
+{{! If we have a tag cover, display that - else blog cover - else nothing }}
 <div class="teaserimage">
-    <div class="teaserimage-image" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-        Teaser Image
+    <div class="teaserimage-image" {{#if tag.image}}style="background-image: url({{tag.image}})"{{else}}{{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}{{/if}}>
+        Tag cover
     </div>
 </div>
 
@@ -45,7 +43,7 @@
 
 {{! The main content area on the homepage }}
 <main class="content" role="main">
-    
+
     <a href="/">Back to Overview</a>
 
     <h5 class="index-headline normal"><span>Article list for {{tag.name}}</span></h5>
@@ -79,11 +77,3 @@
          <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
     </div>
 </footer>
-
-
-
-
-
-
-
-
