@@ -1,3 +1,15 @@
+## Patch Notes
+
+This is a fork of Readium theme with some useful (for me) patches applied. Please feel free to contribute.
+
+* Upgraded Font Awesome.
+* Added `meta` tag for Mail.ru site verification.
+* Analytics tracking code is moved into a partial template.
+* Custom links section is moved into a partial template.
+* Meta tags is moved into partial template.
+
+The original README follows.
+
 # Readium 2.0.0
 **The Medium-like theme for [Ghost](https://github.com/TryGhost)**. Reduced to the core design of Medium (without the cluttered
 stuff, like the sidebar) to bring you a similar user experience

@@ -17,15 +17,7 @@
     {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}" style="background-image: url({{@blog.logo}})">{{@blog.title}}</a>{{/if}}
     <h1 class="blog-title">{{@blog.title}}</h1>
     <h2 class="blog-description">{{@blog.description}}</h2>
-    <div class="custom-links">
-        <a href="https://github.com/ladislas" target="_blank"><i class="fa fa-github"></i></a>&nbsp;&nbsp;
-        <a href="https://twitter.com/ladisonline" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
-        <a href="http://google.com/+LadislasdeToldi" target="_blank"><i class="fa fa-google-plus"></i></a>&nbsp;&nbsp;
-        <a href="https://www.linkedin.com/in/ladislasdetoldi/en" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;·&nbsp;&nbsp;
-        <a href="/aboutme">about me</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-        <a href="http://weareleka.com/">We Are Leka!</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-        <a href="http://discovermoti.com/">Moti</a>
-    </div>
+    {{> custom-links}}
 </header>
 
 <script>
