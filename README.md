@@ -1,9 +1,11 @@
 # Patch Notes
 
-This is a fork of Readium theme with some useful (for me) patches applied. Please feel free to contribute.
+This is a fork of Readium theme with some useful patches. Please feel free to contribute.
 
-* Post and static page covers are now editable via Ghost Admin instead of assigning the weird `articleImage` tag.
-* Support tag covers.
+## Patches
+
+* Supported editing of post and static page covers via Ghost Admin instead of assigning the weird `articleImage` tag.
+* Supported tag covers.
 * Upgraded Font Awesome.
 * Added `meta` tag for Mail.ru site verification.
 * Analytics tracking code is moved into `analytics.hbs` partial template.
