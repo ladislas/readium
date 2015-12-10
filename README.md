@@ -1,14 +1,15 @@
-## Patch Notes
+# Patch Notes
 
 This is a fork of Readium theme with some useful (for me) patches applied. Please feel free to contribute.
 
+* Post image is now editable via Ghost Admin instead of assigning the weird `articleImage` tag.
 * Upgraded Font Awesome.
 * Added `meta` tag for Mail.ru site verification.
 * Analytics tracking code is moved into a partial template.
 * Custom links section is moved into a partial template.
 * Meta tags is moved into partial template.
 
-The original README follows.
+**The original README follows:**
 
 # Readium 2.0.0
 **The Medium-like theme for [Ghost](https://github.com/TryGhost)**. Reduced to the core design of Medium (without the cluttered
