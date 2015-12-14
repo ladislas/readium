@@ -4,6 +4,12 @@ This is a fork of Readium theme with some useful patches. Please feel free to co
 
 ## Patches
 
+### 0.1.2
+
+* Duplicated `bottom-teaser` and `post-footer` were moved into partials.
+
+### Earlier
+
 * Supported editing of post and static page covers via Ghost Admin instead of assigning the weird `articleImage` tag.
 * Supported tag covers.
 * Blog name and description are replaced with tag name and description in the `tag` template.
