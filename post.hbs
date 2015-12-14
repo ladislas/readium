@@ -87,17 +87,19 @@
 
         {{/if}}
 
-            <section class="post-content">
-                <div class="post-reading">
-                    <span class="post-reading-time"></span> read
-                </div>
-                <a name="topofpage"></a>
-                {{content}}
-            </section>
+        <section class="post-content">
+            <div class="post-reading">
+                <span class="post-reading-time"></span> read
+            </div>
+            <a name="topofpage"></a>
+            {{content}}
+        </section>
 
-            {{> post-footer}}
-            {{> comment-list}}
-            {{> bottom-teaser}}
+        {{> post-footer}}
+        {{> comment-list}}
+        {{> bottom-teaser}}
+
+        {{/post}}
 
     </article>
 
