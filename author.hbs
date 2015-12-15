@@ -40,19 +40,14 @@
     {{#if image}}<a class="blog-logo" href="#" style="background-image: url({{image}})">{{name}}</a>{{/if}}
     <h1 class="blog-title">{{name}}</h1>
     <h2 class="blog-description">{{bio}}</h2>
-    <div class="custom-links">
-        <a href="https://twitter.com/MarkReadM" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
-        <a href="https://plus.google.com/113570202169808481097/posts" target="_blank"><i class="fa fa-google-plus"></i></a>&nbsp;&nbsp;
-        <a href="https://www.pinterest.com/markreadM/" target="_blank"><i class="fa fa-pinterest"></i></a>
-    </div>
 </header>
 
 
 {{! The main content area on the homepage }}
 
 <main class="content tag-list" role="main">
-    
-    
+
+
     {{/author}}
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
@@ -70,7 +65,7 @@
     {{/foreach}}
 
     {{!! After all the posts, we have the previous/next pagination links }}
-    
+
     <h5 class="index-headline bottom"><span>{{pagination}}</span></h5>
 
 </main>

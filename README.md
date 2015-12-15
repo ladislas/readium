@@ -4,6 +4,10 @@ This is a fork of Readium theme with some useful patches. Please feel free to co
 
 ## Patches
 
+### 0.1.4
+
+* Removed custom links from the author page.
+
 ### 0.1.3
 
 * Use Font Awesome in `post-footer`.
