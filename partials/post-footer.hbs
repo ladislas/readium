@@ -1,11 +1,6 @@
 <footer class="post-footer">
     <section class="share">
         <a
-            href="https://vk.com/share.php?url={{url absolute="true"}}"
-            onclick="window.open(this.href, 'vk-share', 'width=550,height=320'); return false;">
-            <i class="fa fa-lg fa-vk"></i>
-        </a>
-        <a
             href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
             onclick="window.open(this.href, 'twitter-share', 'width=550,height=320'); return false;">
             <i class="fa fa-lg fa-twitter"></i>
@@ -19,6 +14,11 @@
             href="https://plus.google.com/share?url={{url absolute="true"}}"
             onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530'); return false;">
             <i class="fa fa-lg fa-google-plus"></i>
+        </a>
+        <a
+            href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&summary={{encode title}}&source={{@blog.title}}"
+            onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530'); return false;">
+            <i class="fa fa-lg fa-linkedin"></i>
         </a>
     </section>
 </footer>
